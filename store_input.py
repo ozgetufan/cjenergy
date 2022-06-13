@@ -207,7 +207,7 @@ def store_input(input_file):
     # Include Energy extension in the "extensions"
     data["extensions"] = {}
     data["extensions"]["Energy"] = {
-        "url": "https://raw.githubusercontent.com/ozgetufan/cjenergy/master/version11/schemas/extensions/energy.ext.json",
+        "url": "https://raw.githubusercontent.com/ozgetufan/cjenergy/master/schemas/extensions/energy.ext.json",
         "version": "1.1"}
 
     run_once = 0
