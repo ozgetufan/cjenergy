@@ -1,0 +1,4061 @@
+{
+  "type": "CityJSON",
+  "version": "1.1",
+  "CityObjects": {
+    "Building-4": {
+      "type": "Building",
+      "attributes": {
+        "measuredHeight": 23.714,
+        "roofType": "slanted",
+        "storeysAboveGround": 2,
+        "yearOfConstruction": 1992,
+        "name": "Building-4",
+        "class": "Mixed-use",
+        "function": "winkelfunctie",
+        "usage": "Pand in gebruik",
+        "is_single_part": "1",
+        "n_adjacent_buildings": 4,
+        "footprint_area": 185.2241,
+        "bag_net_internal_area": 260.0,
+        "lod2_volume": 1345.6674,
+        "pand_id": "4",
+        "lod_max": 2,
+        "list_adjacent_buildings": "Building-3,Building-5"
+      },
+      "geometry": [
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_7eabbd5e-1a44-4743-b707-f4060511614c",
+                "name": "GroundSurface 4906-1081",
+                "lod2_area": 176.1634,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              }
+            ]
+          },
+          "lod": "0"
+        },
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                0,
+                30,
+                29,
+                28,
+                27,
+                26,
+                25,
+                24,
+                23,
+                22,
+                21,
+                20,
+                19,
+                18,
+                17,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ],
+            [
+              [
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46
+              ]
+            ],
+            [
+              [
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                35,
+                34,
+                33,
+                57
+              ]
+            ],
+            [
+              [
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68
+              ]
+            ],
+            [
+              [
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78
+              ]
+            ],
+            [
+              [
+                6,
+                7,
+                79,
+                80,
+                71,
+                71
+              ]
+            ],
+            [
+              [
+                24,
+                25,
+                81,
+                82
+              ]
+            ],
+            [
+              [
+                73,
+                74,
+                83,
+                84,
+                8,
+                9,
+                74,
+                73
+              ]
+            ],
+            [
+              [
+                23,
+                24,
+                82,
+                85,
+                67,
+                67
+              ]
+            ],
+            [
+              [
+                7,
+                8,
+                84,
+                79
+              ]
+            ],
+            [
+              [
+                82,
+                68,
+                67,
+                85
+              ]
+            ],
+            [
+              [
+                79,
+                72,
+                71,
+                80
+              ]
+            ],
+            [
+              [
+                81,
+                58,
+                68,
+                82
+              ]
+            ],
+            [
+              [
+                83,
+                74,
+                73,
+                84
+              ]
+            ],
+            [
+              [
+                84,
+                73,
+                72,
+                79
+              ]
+            ],
+            [
+              [
+                55,
+                37,
+                36,
+                56
+              ]
+            ],
+            [
+              [
+                59,
+                26,
+                27,
+                60
+              ]
+            ],
+            [
+              [
+                32,
+                13,
+                14,
+                15,
+                16,
+                47,
+                57,
+                33
+              ]
+            ],
+            [
+              [
+                40,
+                1,
+                2,
+                41
+              ]
+            ],
+            [
+              [
+                42,
+                78,
+                77,
+                76,
+                75,
+                45,
+                44,
+                43
+              ]
+            ],
+            [
+              [
+                60,
+                27,
+                28,
+                61
+              ]
+            ],
+            [
+              [
+                50,
+                19,
+                20,
+                21,
+                65,
+                64,
+                63,
+                62,
+                29,
+                30,
+                38,
+                37,
+                55,
+                54,
+                53,
+                52,
+                51
+              ]
+            ],
+            [
+              [
+                38,
+                30,
+                0,
+                39
+              ]
+            ],
+            [
+              [
+                49,
+                18,
+                19,
+                50
+              ]
+            ],
+            [
+              [
+                45,
+                75,
+                10,
+                11,
+                46
+              ]
+            ],
+            [
+              [
+                61,
+                28,
+                29,
+                62
+              ]
+            ],
+            [
+              [
+                5,
+                6,
+                71,
+                70,
+                69,
+                4
+              ]
+            ],
+            [
+              [
+                48,
+                17,
+                18,
+                49
+              ]
+            ],
+            [
+              [
+                22,
+                23,
+                67,
+                66,
+                65,
+                21
+              ]
+            ],
+            [
+              [
+                3,
+                4,
+                69,
+                78,
+                42,
+                41,
+                2
+              ]
+            ],
+            [
+              [
+                39,
+                0,
+                1,
+                40
+              ]
+            ],
+            [
+              [
+                74,
+                9,
+                10,
+                75
+              ]
+            ],
+            [
+              [
+                31,
+                12,
+                13,
+                32
+              ]
+            ],
+            [
+              [
+                47,
+                16,
+                17,
+                48
+              ]
+            ],
+            [
+              [
+                46,
+                11,
+                12,
+                31
+              ]
+            ],
+            [
+              [
+                58,
+                25,
+                26,
+                59
+              ]
+            ],
+            [
+              [
+                56,
+                36,
+                35
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_7eabbd5e-1a44-4743-b707-f4060511614c",
+                "name": "GroundSurface 4906-1081",
+                "lod2_area": 176.1634,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_53cc50b8-6d50-443e-b0e0-669ff71b6755",
+                "name": "RoofSurface 4906-9",
+                "lod2_area": 75.9834,
+                "inclination": 27.5901,
+                "surf_normal": "-0.10147229268136207,-0.4518909003707592,0.8862832436530055",
+                "azimuth": 192.6559,
+                "direction": "S"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_ab75dfc8-e611-45bd-9a73-b2b1c7af9709",
+                "name": "RoofSurface 4906-1374",
+                "lod2_area": 83.833,
+                "inclination": 27.5756,
+                "surf_normal": "0.10107325780338501,0.451749631448714,0.8864008500915157",
+                "azimuth": 12.6115,
+                "direction": "N"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_5c696397-3b9f-48b0-b1d2-6fa1e57c74b7",
+                "name": "RoofSurface 4906-5237",
+                "lod2_area": 20.3562,
+                "inclination": 0.5499,
+                "surf_normal": "-0.004727802776375661,-0.00835247613413345,0.9999539409509501",
+                "azimuth": 209.5114,
+                "direction": "SW"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_e621e702-ad0f-4d03-847d-52d070d0d9e1",
+                "name": "RoofSurface 4906-7305",
+                "lod2_area": 14.1557,
+                "inclination": 0.1156,
+                "surf_normal": "0.0018815707104398779,-0.000727585415143099,0.9999979651534923",
+                "azimuth": 111.141,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_2bf8d538-ed3f-4c2f-a426-5d8e18c78376",
+                "name": "WallSurface 4906-14 (split)",
+                "lod2_area": 0.0508,
+                "inclination": 90.0,
+                "surf_normal": "-0.379813986834164829796528;-0.925062881865409658360780;0.000000000000000000000000",
+                "azimuth": 202.3222,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_d1f86a5e-25f8-485d-856b-36b911263728",
+                "name": "WallSurface 4906-851 (split)",
+                "lod2_area": 0.0013,
+                "inclination": 90.0,
+                "surf_normal": "-0.967996898192090608836901;0.250962158682322877741238;0.000000000000000000000000",
+                "azimuth": 284.5345,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_662095af-787e-4f17-87e7-49f706ad9191",
+                "name": "WallSurface 4906-3727 (split)",
+                "lod2_area": 0.0018,
+                "inclination": 90.0,
+                "surf_normal": "-0.379673715672806400633948;-0.925120462224895857085573;0.000000000000000000000000",
+                "azimuth": 202.3135,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_fefbb0c4-1b4c-4de0-ae2e-fd0beccf5152",
+                "name": "WallSurface 4906-4430 (split)",
+                "lod2_area": 0.1055,
+                "inclination": 90.0,
+                "surf_normal": "-0.971143862930404876559178;0.238494439123034869107876;0.000000000000000000000000",
+                "azimuth": 283.7977,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_8aab986a-800b-418b-a791-2a7f440a9717",
+                "name": "WallSurface 4906-5368 (split)",
+                "lod2_area": 0.0055,
+                "inclination": 90.0,
+                "surf_normal": "-0.378441463897447358450842;-0.925625225673521200098383;0.000000000000000000000000",
+                "azimuth": 202.2372,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_393adb42-3a5f-4848-a84a-546493e49583",
+                "name": "WallSurface 4906-2366 (shared)",
+                "lod2_area": 11.2591,
+                "inclination": 90.0,
+                "surf_normal": "-0.97114386293043426389763746;0.23849443912291520424471259;0.00000000000000000000000000",
+                "azimuth": 283.7977,
+                "direction": "W",
+                "list_adjacent_buildings": "Building-3",
+                "adjacent_building_class": "Non-residential (single function)"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_62007a18-5105-441e-91f9-a6b22d8d9aca",
+                "name": "WallSurface 4906-3653 (shared)",
+                "lod2_area": 17.17,
+                "inclination": 90.0,
+                "surf_normal": "-0.37981398683418588712085947;-0.92506288186540101258834079;0.00000000000000000000000000",
+                "azimuth": 202.3222,
+                "direction": "S",
+                "list_adjacent_buildings": "Building-5",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_65a0db84-3534-4e4e-924e-2333e36f3747",
+                "name": "WallSurface 4906-4915 (shared)",
+                "lod2_area": 0.1426,
+                "inclination": 90.0,
+                "surf_normal": "-0.96799689819327514521945423;0.25096215867775387362869254;0.00000000000000000000000000",
+                "azimuth": 284.5345,
+                "direction": "W",
+                "list_adjacent_buildings": "Building-3",
+                "adjacent_building_class": "Non-residential (single function)"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_fcdc649d-7653-476a-984a-a16de83c9ffb",
+                "name": "WallSurface 4906-5748 (shared)",
+                "lod2_area": 0.5786,
+                "inclination": 90.0,
+                "surf_normal": "-0.37967371567375831832929914;-0.92512046222450518613173424;0.00000000000000000000000000",
+                "azimuth": 202.3135,
+                "direction": "S",
+                "list_adjacent_buildings": "Building-5",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_eb0d6b4b-6458-481a-b106-609510a46539",
+                "name": "WallSurface 4906-7556 (shared)",
+                "lod2_area": 1.8892,
+                "inclination": 90.0,
+                "surf_normal": "-0.37844146389809802203761083;-0.92562522567325517516309479;0.00000000000000000000000000",
+                "azimuth": 202.2372,
+                "direction": "S",
+                "list_adjacent_buildings": "Building-5",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_a6fae739-28a0-4e62-9c13-509b96582745",
+                "name": "WallSurface 4906-1915",
+                "lod2_area": 0.6479,
+                "inclination": 90.0,
+                "surf_normal": "-0.3972760189497438,-0.9176991689913655,0",
+                "azimuth": 203.408,
+                "direction": "SW"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_6a8d8c57-37fb-4cf7-be27-f1625ee2e8e3",
+                "name": "WallSurface 4906-6448",
+                "lod2_area": 11.3668,
+                "inclination": 90.0,
+                "surf_normal": "-0.22299779860971516,-0.9748189482233206,0",
+                "azimuth": 192.8852,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_6e227a28-1527-49c9-a064-0f7ff6c577f9",
+                "name": "WallSurface 4906-6918",
+                "lod2_area": 64.904,
+                "inclination": 90.0,
+                "surf_normal": "0.976561086896559,-0.21524043198110207,-6.842251079640584e-18",
+                "azimuth": 102.4296,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_e0fecebf-35ab-4954-8a46-331246fc712b",
+                "name": "WallSurface 4906-7536",
+                "lod2_area": 2.2806,
+                "inclination": 90.0,
+                "surf_normal": "-0.2238247753733131,-0.9746294013260044,0",
+                "azimuth": 192.9338,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_56dd756c-d5f1-4ea7-970b-2320d3c4a3bc",
+                "name": "WallSurface 4906-12124",
+                "lod2_area": 19.6764,
+                "inclination": 90.0,
+                "surf_normal": "-0.229410125428017,-0.9733298486901044,1.322438916957129e-17",
+                "azimuth": 193.2623,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_e48a2587-87ed-4fe8-a144-da7e9afe4c52",
+                "name": "WallSurface 4906-15001",
+                "lod2_area": 0.7639,
+                "inclination": 90.0,
+                "surf_normal": "-0.9769000174001258,0.21369687878776739,0",
+                "azimuth": 282.3391,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_ed51f5ee-17df-4ec0-bc65-f2ee141cbe36",
+                "name": "WallSurface 4906-24015",
+                "lod2_area": 52.7391,
+                "inclination": 90.0,
+                "surf_normal": "-0.9743495915090893,0.22503971544167695,4.533008367668062e-18",
+                "azimuth": 283.0052,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_98f41075-1265-440b-8001-000594905ca3",
+                "name": "WallSurface 4906-34458",
+                "lod2_area": 0.3411,
+                "inclination": 90.0,
+                "surf_normal": "-0.9734171683627165,0.22903933360169954,0",
+                "azimuth": 283.2405,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_cceed7c5-db35-41d2-9684-265ce4238c89",
+                "name": "WallSurface 4906-36369",
+                "lod2_area": 97.3871,
+                "inclination": 90.0,
+                "surf_normal": "0.21908545869609447,0.9757056737499901,0",
+                "azimuth": 12.6553,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_78a5df79-f900-481c-8480-cecdcac00224",
+                "name": "WallSurface 4906-42272",
+                "lod2_area": 1.9153,
+                "inclination": 90.0,
+                "surf_normal": "0.9771163335215013,-0.21270559646022044,0",
+                "azimuth": 102.281,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_1b5a320f-fa4d-49fb-b614-fc2128c13eb7",
+                "name": "WallSurface 4906-42447",
+                "lod2_area": 0.573,
+                "inclination": 90.0,
+                "surf_normal": "-0.3977342730952223,-0.9175006528637542,0",
+                "azimuth": 203.4366,
+                "direction": "SW"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_6c243509-b214-4b5b-b980-607a9685a8f8",
+                "name": "WallSurface 4906-44107",
+                "lod2_area": 5.4547,
+                "inclination": 90.0,
+                "surf_normal": "-0.9657975018095172,0.25929748455875046,0",
+                "azimuth": 285.0284,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_e6c95125-fe3a-45c2-b3d5-36f3854bfae1",
+                "name": "WallSurface 4906-47124",
+                "lod2_area": 0.9238,
+                "inclination": 90.0,
+                "surf_normal": "0.9888367737539764,-0.14900280155697443,0",
+                "azimuth": 98.5691,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_6ffb3aef-60f7-4d16-aa82-ddae22978c78",
+                "name": "WallSurface 4906-49695",
+                "lod2_area": 12.101,
+                "inclination": 90.0,
+                "surf_normal": "0.24401693818489506,0.9697709698062058,0",
+                "azimuth": 14.1237,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_21ecbff7-1c31-4356-81e5-fc869eef31bf",
+                "name": "WallSurface 4906-50580",
+                "lod2_area": 1.8097,
+                "inclination": 90.0,
+                "surf_normal": "-0.9662935274994441,0.25744284552630525,0",
+                "azimuth": 284.9184,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_99e68e8d-7b6e-42a1-a7ab-d521d3dc7460",
+                "name": "WallSurface 4906-52007",
+                "lod2_area": 58.3112,
+                "inclination": 90.0,
+                "surf_normal": "-0.22623890865759216,-0.974071843453768,0",
+                "azimuth": 193.0757,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_a0d47570-3acd-4aa4-86b6-fabaf35cbd02",
+                "name": "WallSurface 4906-54147",
+                "lod2_area": 8.6199,
+                "inclination": 90.0,
+                "surf_normal": "0.9766338899067177,-0.21490985339363408,0",
+                "azimuth": 102.4102,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_f7e83b7c-c2e9-42fa-85ec-95c5822c59e2",
+                "name": "WallSurface 4906-59119",
+                "lod2_area": 1.0619,
+                "inclination": 90.0,
+                "surf_normal": "-0.21242964452905,-0.977176363879756,0",
+                "azimuth": 192.2648,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_7e473d79-5e43-44a3-a87a-bba350070650",
+                "name": "WallSurface 4906-62922",
+                "lod2_area": 1.5882,
+                "inclination": 90.0,
+                "surf_normal": "0.22196372279522494,0.9750549244852232,0",
+                "azimuth": 12.8244,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_28197808-a124-4a0f-a995-2937d93b8439",
+                "name": "WallSurface 4906-64927",
+                "lod2_area": 2.2983,
+                "inclination": 90.0,
+                "surf_normal": "-0.21871145686379226,-0.9757895770280175,0",
+                "azimuth": 192.6334,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_41e9026b-327e-43ea-bb8f-f4dc38978347",
+                "name": "WallSurface 4906-68430",
+                "lod2_area": 0.1327,
+                "inclination": 90.0,
+                "surf_normal": "-0.23337295324598,-0.97238730179556,0",
+                "azimuth": 193.4957,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_7b96f0b6-4cf4-4827-875a-f442eea00dd1",
+                "name": "WallSurface 4906-68552",
+                "lod2_area": 0.211,
+                "inclination": 90.0,
+                "surf_normal": "0.9930538893278269,-0.11766041344001825,0",
+                "azimuth": 96.7571,
+                "direction": "E"
+              }
+            ]
+          },
+          "lod": "2"
+        }
+      ]
+    },
+    "Building-5": {
+      "type": "Building",
+      "attributes": {
+        "measuredHeight": 23.453,
+        "roofType": "slanted",
+        "storeysAboveGround": 3,
+        "yearOfConstruction": 1994,
+        "name": "Building-5",
+        "class": "Residential",
+        "function": "woonfunctie",
+        "usage": "Pand in gebruik",
+        "is_single_part": "1",
+        "n_adjacent_buildings": 4,
+        "footprint_area": 70.4512,
+        "bag_net_internal_area": 140.0,
+        "lod2_volume": 415.320,
+        "pand_id": "5",
+        "lod_max": 2,
+        "list_adjacent_buildings": "Building-4"
+      },
+      "geometry": [
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                83,
+                100,
+                101,
+                102,
+                80,
+                103,
+                104,
+                105,
+                106
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_a51cb9e5-ecde-4696-9d54-23172936f1af",
+                "name": "GroundSurface 4906-3112",
+                "lod2_area": 62.7482,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              }
+            ]
+          },
+          "lod": "0"
+        },
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                86,
+                106,
+                105,
+                104,
+                103,
+                80,
+                102,
+                101,
+                100,
+                83,
+                99,
+                98,
+                97,
+                96,
+                95,
+                94,
+                93,
+                92,
+                91,
+                90,
+                89,
+                88,
+                87
+              ]
+            ],
+            [
+              [
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123
+              ]
+            ],
+            [
+              [
+                124,
+                125,
+                126,
+                127,
+                128,
+                129
+              ]
+            ],
+            [
+              [
+                130,
+                131,
+                132,
+                133
+              ]
+            ],
+            [
+              [
+                112,
+                111,
+                110,
+                134,
+                135,
+                107,
+                136,
+                122,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148
+              ]
+            ],
+            [
+              [
+                149,
+                150,
+                148
+              ]
+            ],
+            [
+              [
+                91,
+                92,
+                93,
+                94,
+                114,
+                151,
+                114,
+                152,
+                153
+              ]
+            ],
+            [
+              [
+                154,
+                149,
+                153,
+                155,
+                90,
+                91,
+                148,
+                147
+              ]
+            ],
+            [
+              [
+                137,
+                122,
+                121,
+                120,
+                74,
+                73,
+                156,
+                157,
+                158,
+                159,
+                84,
+                83,
+                83,
+                100,
+                101,
+                102,
+                80,
+                138
+              ]
+            ],
+            [
+              [
+                153,
+                149,
+                154,
+                155
+              ]
+            ],
+            [
+              [
+                84,
+                73,
+                74,
+                83
+              ]
+            ],
+            [
+              [
+                156,
+                73,
+                84,
+                159
+              ]
+            ],
+            [
+              [
+                71,
+                156,
+                159,
+                80
+              ]
+            ],
+            [
+              [
+                152,
+                114,
+                112,
+                160,
+                149,
+                153
+              ]
+            ],
+            [
+              [
+                146,
+                89,
+                90,
+                147
+              ]
+            ],
+            [
+              [
+                96,
+                97,
+                117,
+                116,
+                115,
+                95
+              ]
+            ],
+            [
+              [
+                124,
+                109,
+                108,
+                125
+              ]
+            ],
+            [
+              [
+                127,
+                135,
+                134,
+                128
+              ]
+            ],
+            [
+              [
+                107,
+                135,
+                127,
+                126,
+                125,
+                108
+              ]
+            ],
+            [
+              [
+                145,
+                88,
+                89,
+                146
+              ]
+            ],
+            [
+              [
+                132,
+                106,
+                86,
+                87,
+                144,
+                143,
+                133
+              ]
+            ],
+            [
+              [
+                144,
+                87,
+                88,
+                145
+              ]
+            ],
+            [
+              [
+                98,
+                99,
+                119,
+                118,
+                117,
+                97
+              ]
+            ],
+            [
+              [
+                138,
+                80,
+                103,
+                139
+              ]
+            ],
+            [
+              [
+                128,
+                134,
+                110,
+                109,
+                124,
+                129
+              ]
+            ],
+            [
+              [
+                114,
+                94,
+                95,
+                115
+              ]
+            ],
+            [
+              [
+                123,
+                136,
+                107
+              ]
+            ],
+            [
+              [
+                139,
+                103,
+                104,
+                140
+              ]
+            ],
+            [
+              [
+                131,
+                105,
+                106,
+                132
+              ]
+            ],
+            [
+              [
+                142,
+                130,
+                133,
+                143
+              ]
+            ],
+            [
+              [
+                119,
+                99,
+                83,
+                120
+              ]
+            ],
+            [
+              [
+                136,
+                123,
+                122
+              ]
+            ],
+            [
+              [
+                140,
+                104,
+                105,
+                131,
+                130,
+                142,
+                141
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_a51cb9e5-ecde-4696-9d54-23172936f1af",
+                "name": "GroundSurface 4906-3112",
+                "lod2_area": 62.7482,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_13a9447f-75f7-4226-bf79-c031a35f4351",
+                "name": "RoofSurface 4906-2296",
+                "lod2_area": 29.5761,
+                "inclination": 31.6679,
+                "surf_normal": "0.48624969138208346,-0.19793999369354418,0.8511057493210982",
+                "azimuth": 112.15,
+                "direction": "E"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_cef28a6b-f7eb-4991-8177-f3b9a41fec82",
+                "name": "RoofSurface 4906-3289",
+                "lod2_area": 0.6031,
+                "inclination": 7.7777,
+                "surf_normal": "0.07367807972339264,-0.11351498091624822,0.9908006306396142",
+                "azimuth": 147.014,
+                "direction": "SE"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_385728b7-877c-4eae-82b0-f380509b21d3",
+                "name": "RoofSurface 4906-6217",
+                "lod2_area": 9.0578,
+                "inclination": 0.6476,
+                "surf_normal": "0.0014761348049567727,-0.011205784723021127,0.9999361236672965",
+                "azimuth": 172.4957,
+                "direction": "S"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_fdfa9996-81d6-435b-88c2-14212d171249",
+                "name": "RoofSurface 4906-10689",
+                "lod2_area": 32.7822,
+                "inclination": 31.6012,
+                "surf_normal": "-0.4844560022628268,0.19970733711669097,0.8517155401736427",
+                "azimuth": 292.4029,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_e3f559d7-7bab-472f-83a2-7df527805e54",
+                "name": "WallSurface 4906-785 (split)",
+                "lod2_area": 0.0057,
+                "inclination": 90.0,
+                "surf_normal": "-0.378826401492123063028877;-0.925467750671263953111120;0.000000000000000000000000",
+                "azimuth": 202.261,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_7a2ed019-5036-41f5-a6a2-c82da5106d3a",
+                "name": "WallSurface 4906-998 (split)",
+                "lod2_area": 0.0948,
+                "inclination": 90.0,
+                "surf_normal": "-0.378826401492123063028877;-0.925467750671263953111120;0.000000000000000000000000",
+                "azimuth": 202.261,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_a35e8c26-7a95-4a69-bcb7-26d5d7b0084c",
+                "name": "WallSurface 4906-5612 (split)",
+                "lod2_area": 0.0074,
+                "inclination": 90.0,
+                "surf_normal": "-0.380570909008793240503246;-0.924751741396695516596180;0.000000000000000000000000",
+                "azimuth": 202.3691,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_047af207-fbfa-4797-92ca-38cd28e491f9",
+                "name": "WallSurface 4906-7461 (split)",
+                "lod2_area": 25.4042,
+                "inclination": 90.0,
+                "surf_normal": "0.379670714268656494925455;0.925121694009349343737698;0.000000000000000000000000",
+                "azimuth": 22.3133,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_adec8bae-fc09-4879-b292-f5fda63955b3",
+                "name": "WallSurface 4906-539 (shared)",
+                "lod2_area": 1.6202,
+                "inclination": 90.0,
+                "surf_normal": "-0.38057090900795059757127577;-0.92475174139704229416136184;0.00000000000000000000000000",
+                "azimuth": 202.3691,
+                "direction": "S",
+                "list_adjacent_buildings": "NL.IMBAG.Pand.1742100000006003",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_4e2d5b5c-1b35-4d03-9f1f-98104afc3b9c",
+                "name": "WallSurface 4906-3732 (shared)",
+                "lod2_area": 0.5786,
+                "inclination": 90.0,
+                "surf_normal": "0.37967071426896931313331502;0.92512169400922096288271665;0.00000000000000000000000000",
+                "azimuth": 22.3133,
+                "direction": "N",
+                "list_adjacent_buildings": "Building-4",
+                "adjacent_building_class": "Mixed-use"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_c4861fd1-1fdf-4f16-adad-c992fad20e93",
+                "name": "WallSurface 4906-3868 (shared)",
+                "lod2_area": 1.8892,
+                "inclination": 90.0,
+                "surf_normal": "0.37967071426865325385777162;0.92512169400935067387282088;0.00000000000000000000000000",
+                "azimuth": 22.3133,
+                "direction": "N",
+                "list_adjacent_buildings": "Building-4",
+                "adjacent_building_class": "Mixed-use"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_a59c4ca1-fa64-486d-bfc2-080410806066",
+                "name": "WallSurface 4906-3877 (shared)",
+                "lod2_area": 17.17,
+                "inclination": 90.0,
+                "surf_normal": "0.37967071426871113424131590;0.92512169400932691971517361;0.00000000000000000000000000",
+                "azimuth": 22.3133,
+                "direction": "N",
+                "list_adjacent_buildings": "Building-4",
+                "adjacent_building_class": "Mixed-use"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_436bf7d0-fac7-457f-9046-87aa1b71a15e",
+                "name": "WallSurface 4906-5936 (shared)",
+                "lod2_area": 50.7451,
+                "inclination": 90.0,
+                "surf_normal": "-0.37882640149212622199933663;-0.92546775067126266002880531;0.00000000000003326977596216083521",
+                "azimuth": 202.261,
+                "direction": "S",
+                "list_adjacent_buildings": "NL.IMBAG.Pand.1742100000006003",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_3476461d-e1ac-4519-9bd3-ffd60191a8d9",
+                "name": "WallSurface 4906-422",
+                "lod2_area": 0.217,
+                "inclination": 90.0,
+                "surf_normal": "-0.91914502978086,0.39391929913262924,0",
+                "azimuth": 293.1986,
+                "direction": "NW"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_83f65c59-50a9-40b5-8e08-10bab886a883",
+                "name": "WallSurface 4906-1533",
+                "lod2_area": 40.8074,
+                "inclination": 90.0,
+                "surf_normal": "0.9256930070869878,-0.37827563578725226,0",
+                "azimuth": 112.2269,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_31a6a061-cf9e-4623-8177-448131430c75",
+                "name": "WallSurface 4906-3408",
+                "lod2_area": 0.8914,
+                "inclination": 90.0,
+                "surf_normal": "0.9715941120607836,-0.23665350495781318,0",
+                "azimuth": 103.6891,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_1c892836-a197-416b-bc13-7e5d3655d79b",
+                "name": "WallSurface 4906-6504",
+                "lod2_area": 0.8986,
+                "inclination": 90.0,
+                "surf_normal": "-0.8591484744480754,0.5117263906166504,0",
+                "azimuth": 300.7789,
+                "direction": "NW"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_7e6d00e8-05f2-4e27-adb8-cab1154ed991",
+                "name": "WallSurface 4906-18453",
+                "lod2_area": 0.7114,
+                "inclination": 90.0,
+                "surf_normal": "0.5635803322433157,0.8260612623216961,0",
+                "azimuth": 34.3038,
+                "direction": "NE"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_67b80638-35a4-411a-a285-f8bec566afb0",
+                "name": "WallSurface 4906-20868",
+                "lod2_area": 18.7105,
+                "inclination": 90.0,
+                "surf_normal": "-0.9257650206694668,0.3780993606247725,0",
+                "azimuth": 292.216,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_b8f6580b-9d4d-4214-b3d1-dd095755d120",
+                "name": "WallSurface 4906-21440",
+                "lod2_area": 10.2403,
+                "inclination": 90.0,
+                "surf_normal": "-0.952468778466243,0.30463621919762407,0",
+                "azimuth": 287.7363,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_67b3c1f6-b6fc-4c0b-8608-65575653d3ea",
+                "name": "WallSurface 4906-34924",
+                "lod2_area": 13.5455,
+                "inclination": 90.0,
+                "surf_normal": "-0.378327368651304,-0.9256718652575436,0",
+                "azimuth": 202.2301,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_0acbb8f9-0fe1-436a-a0ab-4ebe2270b74d",
+                "name": "WallSurface 4906-38452",
+                "lod2_area": 4.8803,
+                "inclination": 90.0,
+                "surf_normal": "0.218393037927458,0.975860892230453,0",
+                "azimuth": 12.6147,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_6baf605a-74f2-4975-8269-d8a85e4dbc77",
+                "name": "WallSurface 4906-41390",
+                "lod2_area": 2.564,
+                "inclination": 90.0,
+                "surf_normal": "0.2178916393288853,0.9759729676126132,0",
+                "azimuth": 12.5852,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_9b885386-b82a-48d0-8c57-4fa6d87667ae",
+                "name": "WallSurface 4906-44823",
+                "lod2_area": 0.9208,
+                "inclination": 90.0,
+                "surf_normal": "-0.48384328878043953,-0.8751546559906586,-1.1303835960682908e-17",
+                "azimuth": 208.9367,
+                "direction": "SW"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_7818be2c-dc29-4270-afc8-795198c256b5",
+                "name": "WallSurface 4906-45792",
+                "lod2_area": 0.7478,
+                "inclination": 90.0,
+                "surf_normal": "0.9235393666517806,-0.38350363524278097,0",
+                "azimuth": 112.5509,
+                "direction": "SE"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_023687ea-a2cb-4aa1-8e87-9489a362e922",
+                "name": "WallSurface 4906-49041",
+                "lod2_area": 0.0008,
+                "inclination": 90.0,
+                "surf_normal": "0.922920816555918,-0.38498982631721285,0",
+                "azimuth": 112.6431,
+                "direction": "SE"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_0c62b471-39b2-46db-8f64-28a136485ac5",
+                "name": "WallSurface 4906-57887",
+                "lod2_area": 1.2497,
+                "inclination": 90.0,
+                "surf_normal": "0.3775824358132232,0.925975973859664,0",
+                "azimuth": 22.184,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_10a0c98e-b743-4209-ada3-5b48add31fbe",
+                "name": "WallSurface 4906-60802",
+                "lod2_area": 8.871,
+                "inclination": 90.0,
+                "surf_normal": "0.3478614012676782,0.937545969810594,0",
+                "azimuth": 20.3566,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_f1e25828-ab7c-46a5-b868-58ba83be6d72",
+                "name": "WallSurface 4906-61433",
+                "lod2_area": 4.9984,
+                "inclination": 90.0,
+                "surf_normal": "0.31241697510264377,0.9499450687633016,0",
+                "azimuth": 18.2049,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_1e304efb-2134-41f5-868a-ff3f15666c75",
+                "name": "WallSurface 4906-61789",
+                "lod2_area": 0.1429,
+                "inclination": 90.0,
+                "surf_normal": "0.975132855740772,-0.2216211038119945,0",
+                "azimuth": 102.8043,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_9146f31d-7edf-4520-a83e-859c2da3d246",
+                "name": "WallSurface 4906-67216",
+                "lod2_area": 0.0003,
+                "inclination": 90.0,
+                "surf_normal": "0.931887250185789,-0.3627480571156355,0",
+                "azimuth": 111.2691,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_a17b63a2-3796-4a6a-afa9-02f5257cc85f",
+                "name": "WallSurface 4906-67888",
+                "lod2_area": 9.2338,
+                "inclination": 90.0,
+                "surf_normal": "-0.9506186597863072,0.3103613437045363,3.099815129450602e-18",
+                "azimuth": 288.081,
+                "direction": "W"
+              }
+            ]
+          },
+          "lod": "2"
+        }
+      ]
+    },
+    "Building-2": {
+      "type": "Building",
+      "attributes": {
+        "measuredHeight": 22.85,
+        "roofType": "slanted",
+        "storeysAboveGround": 2,
+        "yearOfConstruction": 1948,
+        "name": "Building-2",
+        "class": "Residential",
+        "function": "woonfunctie",
+        "usage": "Pand in gebruik",
+        "is_single_part": "1",
+        "n_adjacent_buildings": 1,
+        "footprint_area": 51.2467,
+        "bag_net_internal_area": 83.0,
+        "lod2_volume": 305.2165,
+        "pand_id": "2",
+        "lod_max": 2,
+        "list_adjacent_buildings": "Building-1"
+      },
+      "geometry": [
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_dddd42fb-c192-44f8-af12-11ad40be4221",
+                "name": "GroundSurface 4906-201",
+                "lod2_area": 49.4881,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              }
+            ]
+          },
+          "lod": "0"
+        },
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                161,
+                172,
+                171,
+                170,
+                169,
+                168,
+                167,
+                166,
+                165,
+                164,
+                163,
+                162
+              ]
+            ],
+            [
+              [
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182
+              ]
+            ],
+            [
+              [
+                177,
+                176,
+                175,
+                183,
+                184,
+                185,
+                186,
+                178
+              ]
+            ],
+            [
+              [
+                161,
+                162,
+                163,
+                179,
+                187,
+                188,
+                163,
+                162,
+                189,
+                190,
+                191,
+                178,
+                186
+              ]
+            ],
+            [
+              [
+                163,
+                164,
+                180,
+                179
+              ],
+              [
+                163,
+                188,
+                192,
+                164
+              ]
+            ],
+            [
+              [
+                163,
+                188,
+                193,
+                191,
+                190,
+                189,
+                162
+              ]
+            ],
+            [
+              [
+                164,
+                192,
+                188,
+                163
+              ]
+            ],
+            [
+              [
+                182,
+                166,
+                167,
+                173
+              ]
+            ],
+            [
+              [
+                174,
+                168,
+                169,
+                170,
+                183,
+                175
+              ]
+            ],
+            [
+              [
+                173,
+                167,
+                168,
+                174
+              ]
+            ],
+            [
+              [
+                180,
+                164,
+                165,
+                166,
+                182,
+                181
+              ]
+            ],
+            [
+              [
+                172,
+                161,
+                186,
+                185,
+                184,
+                183,
+                170,
+                171
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_dddd42fb-c192-44f8-af12-11ad40be4221",
+                "name": "GroundSurface 4906-201",
+                "lod2_area": 49.4881,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_91c3aa31-bbdf-4fd2-894f-b9cc05607906",
+                "name": "RoofSurface 4906-8515",
+                "lod2_area": 26.3123,
+                "inclination": 30.9979,
+                "surf_normal": "-0.11324398938671473,-0.5024026499521871,0.8571857302760014",
+                "azimuth": 192.7025,
+                "direction": "S"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_7c100833-978f-4595-b4df-c9ac0cab0a46",
+                "name": "RoofSurface 4906-10288",
+                "lod2_area": 31.4321,
+                "inclination": 31.0319,
+                "surf_normal": "0.11380652265386519,0.5027964392553248,0.8568802810624141",
+                "azimuth": 12.7538,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_9653976f-533c-4c52-afd9-298ff15a92e3",
+                "name": "WallSurface 4906-2394 (split)",
+                "lod2_area": 0.18,
+                "inclination": 90.0,
+                "surf_normal": "-0.976575299762742230139690;0.215175937068507164202784;0.000000000000000000000000",
+                "azimuth": 282.4258,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_135ca906-fbc8-4c7e-bf9f-86a21d6f278d",
+                "name": "WallSurface 4906-2801 (split)",
+                "lod2_area": 0.0056,
+                "inclination": 90.0,
+                "surf_normal": "-0.975313298950675293179487;0.220825652699025636408800;0.000000000000000000000000",
+                "azimuth": 282.7575,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_624b733d-13e2-4a82-a56c-11ae2b655dfb",
+                "name": "WallSurface 4906-700 (shared)",
+                "lod2_area": 50.5849,
+                "inclination": 90.0,
+                "surf_normal": "-0.97657529976273861644685406;0.21517593706852356493437433;0.00000000000001213645540990642556",
+                "azimuth": 282.4258,
+                "direction": "W",
+                "list_adjacent_buildings": "Building-1",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_698b03d0-01a1-40a8-8103-d8c13377be9e",
+                "name": "WallSurface 4906-3483 (shared)",
+                "lod2_area": 0.6296,
+                "inclination": 90.0,
+                "surf_normal": "-0.97531329894936391519782759;0.22082565270481754613899946;0.00000000000000000000000000",
+                "azimuth": 282.7575,
+                "direction": "W",
+                "list_adjacent_buildings": "Building-1",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_150eed9a-2248-45e5-b62b-3b3b03e11143",
+                "name": "WallSurface 4906-5772",
+                "lod2_area": 0.6828,
+                "inclination": 90.0,
+                "surf_normal": "0.9730802874870773,-0.2304663838915933,0",
+                "azimuth": 103.3245,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_2c3c5bcc-4366-4ed7-96fc-82fe0751576a",
+                "name": "WallSurface 4906-21349",
+                "lod2_area": 50.6001,
+                "inclination": 90.0,
+                "surf_normal": "0.9775236767346704,-0.21082566594969268,0",
+                "azimuth": 102.1707,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_cc1f73a4-e24e-4719-bcfb-b6953c2a4938",
+                "name": "WallSurface 4906-27828",
+                "lod2_area": 1.057,
+                "inclination": 90.0,
+                "surf_normal": "-0.2163430617605858,-0.9763174072134818,0",
+                "azimuth": 192.4943,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_45ccd604-f254-421e-aa40-fafcf47e912e",
+                "name": "WallSurface 4906-43425",
+                "lod2_area": 36.5136,
+                "inclination": 90.0,
+                "surf_normal": "-0.21526969389079592,-0.9765546369211314,8.694146226038821e-18",
+                "azimuth": 192.4314,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_e28bf67b-0b41-4482-a57c-ac8d7a585cc9",
+                "name": "WallSurface 4906-53283",
+                "lod2_area": 34.6999,
+                "inclination": 90.0,
+                "surf_normal": "0.2177661910749771,0.9760009662006982,0",
+                "azimuth": 12.5779,
+                "direction": "N"
+              }
+            ]
+          },
+          "lod": "2"
+        }
+      ]
+    },
+    "Building-3": {
+      "type": "Building",
+      "attributes": {
+        "measuredHeight": 18.3425,
+        "roofType": "horizontal",
+        "storeysAboveGround": 1,
+        "storeysBelowGround": 0,
+        "yearOfConstruction": 1975,
+        "name": "Building-3",
+        "class": "Non-residential (single function)",
+        "function": "winkelfunctie",
+        "usage": "Pand in gebruik",
+        "is_single_part": "1",
+        "n_adjacent_buildings": 1,
+        "footprint_area": 32.4972,
+        "lod2_volume": 85.9732,
+        "pand_id": "3",
+        "lod_max": 2,
+        "list_adjacent_buildings": "Building-4"
+      },
+      "geometry": [
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                194,
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201,
+                81,
+                202
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_d6a90422-6379-43b8-b779-4b19f87877bf",
+                "name": "GroundSurface 4906-772",
+                "lod2_area": 40.8649,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              }
+            ]
+          },
+          "lod": "0"
+        },
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                194,
+                202,
+                81,
+                201,
+                200,
+                199,
+                198,
+                197,
+                196,
+                195
+              ]
+            ],
+            [
+              [
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209,
+                210,
+                211,
+                212
+              ]
+            ],
+            [
+              [
+                213,
+                214,
+                68,
+                67,
+                85,
+                202,
+                210,
+                215,
+                208,
+                201
+              ]
+            ],
+            [
+              [
+                68,
+                58,
+                81,
+                82
+              ]
+            ],
+            [
+              [
+                67,
+                68,
+                82,
+                85
+              ]
+            ],
+            [
+              [
+                194,
+                195,
+                212,
+                211,
+                210,
+                202
+              ]
+            ],
+            [
+              [
+                207,
+                200,
+                201,
+                208
+              ]
+            ],
+            [
+              [
+                203,
+                196,
+                197,
+                198,
+                199,
+                206,
+                205,
+                204
+              ]
+            ],
+            [
+              [
+                212,
+                195,
+                196,
+                203
+              ]
+            ],
+            [
+              [
+                206,
+                199,
+                200,
+                207
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_d6a90422-6379-43b8-b779-4b19f87877bf",
+                "name": "GroundSurface 4906-772",
+                "lod2_area": 40.8649,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_1e15e7c3-1d5a-4679-9abf-c9fc069d3cc9",
+                "name": "RoofSurface 4906-9814",
+                "lod2_area": 40.866,
+                "inclination": 0.4187,
+                "surf_normal": "-0.0017266075144987058,-0.0071011030090762485,0.9999732962247269",
+                "azimuth": 193.6661,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_b454fee5-ac5d-4c9e-8a72-2880e1efe78a",
+                "name": "WallSurface 4906-6952 (split)",
+                "lod2_area": 14.2395,
+                "inclination": 90.0,
+                "surf_normal": "0.971112589739815193668467;-0.238621746806173100402812;0.000000000000000000000000",
+                "azimuth": 103.8052,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_b8402cf0-9474-4bbc-a298-b5d46addc3ef",
+                "name": "WallSurface 4906-834 (shared)",
+                "lod2_area": 0.1426,
+                "inclination": 90.0,
+                "surf_normal": "0.97111258973685999130770515;-0.23862174681819980901677802;0.00000000000000000000000000",
+                "azimuth": 103.8052,
+                "direction": "E",
+                "list_adjacent_buildings": "Building-4",
+                "adjacent_building_class": "Mixed-use"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_e0886957-67f1-4d20-a9d3-b655126512ca",
+                "name": "WallSurface 4906-4918 (shared)",
+                "lod2_area": 11.2591,
+                "inclination": 90.0,
+                "surf_normal": "0.97111258973982093312426762;-0.23862174680614974269231272;0.00000000000000000000000000",
+                "azimuth": 103.8052,
+                "direction": "E",
+                "list_adjacent_buildings": "Building-4",
+                "adjacent_building_class": "Mixed-use"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_f49c76b6-a4dc-4907-85dc-496816d3c5f7",
+                "name": "WallSurface 4906-6002",
+                "lod2_area": 10.7138,
+                "inclination": 90.0,
+                "surf_normal": "0.21785716836938268,0.9759806628156494,0",
+                "azimuth": 12.5832,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_cada2d8c-5c47-41c8-bed6-23dfccfb1057",
+                "name": "WallSurface 4906-9788",
+                "lod2_area": 0.4858,
+                "inclination": 90.0,
+                "surf_normal": "-0.17200102344749718,-0.985096770846912,0",
+                "azimuth": 189.9042,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_cc9348c2-5578-41e3-8703-d7b87f6c1fd7",
+                "name": "WallSurface 4906-36808",
+                "lod2_area": 9.5148,
+                "inclination": 90.0,
+                "surf_normal": "-0.21199888854756954,-0.9772699070648779,1.0756841314244823e-17",
+                "azimuth": 192.2395,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_e791c65f-40e3-48a7-9f4d-e9212daa927b",
+                "name": "WallSurface 4906-61223",
+                "lod2_area": 26.0661,
+                "inclination": 90.0,
+                "surf_normal": "-0.9747501874667329,0.22329816845099548,0",
+                "azimuth": 282.9028,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_4f4c8da8-a1c7-430b-bcf2-fcb477c6297c",
+                "name": "WallSurface 4906-62151",
+                "lod2_area": 0.3561,
+                "inclination": 90.0,
+                "surf_normal": "0.966705227873553,-0.2558925602707937,0",
+                "azimuth": 104.8265,
+                "direction": "E"
+              }
+            ]
+          },
+          "lod": "2"
+        }
+      ]
+    },
+    "Building-1": {
+      "type": "Building",
+      "attributes": {
+        "measuredHeight": 22.85,
+        "roofType": "slanted",
+        "storeysAboveGround": 2,
+        "yearOfConstruction": 1946,
+        "name": "Building-1",
+        "class": "Residential",
+        "function": "woonfunctie",
+        "usage": "Pand in gebruik",
+        "is_single_part": "1",
+        "n_adjacent_buildings": 1,
+        "footprint_area": 53.8425,
+        "bag_net_internal_area": 82.0,
+        "lod2_volume": 310.2294,
+        "pand_id": "1",
+        "lod_max": 2,
+        "list_adjacent_buildings": "Building-2"
+      },
+      "geometry": [
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                216,
+                217,
+                218,
+                219,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_2a09a878-fd54-4660-8fde-73a362e033c1",
+                "name": "GroundSurface 4906-484",
+                "lod2_area": 49.1378,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              }
+            ]
+          },
+          "lod": "0"
+        },
+        {
+          "type": "MultiSurface",
+          "boundaries": [
+            [
+              [
+                216,
+                229,
+                228,
+                227,
+                226,
+                225,
+                224,
+                223,
+                222,
+                221,
+                220,
+                219,
+                218,
+                217
+              ]
+            ],
+            [
+              [
+                192,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236,
+                237,
+                238
+              ]
+            ],
+            [
+              [
+                190,
+                239,
+                240,
+                241,
+                242,
+                233,
+                232,
+                231
+              ]
+            ],
+            [
+              [
+                226,
+                227,
+                228,
+                189,
+                243,
+                164,
+                225
+              ]
+            ],
+            [
+              [
+                244,
+                230,
+                245,
+                246
+              ]
+            ],
+            [
+              [
+                247,
+                248,
+                231
+              ]
+            ],
+            [
+              [
+                163,
+                188,
+                192,
+                164
+              ]
+            ],
+            [
+              [
+                248,
+                249,
+                188,
+                163,
+                189,
+                190
+              ]
+            ],
+            [
+              [
+                235,
+                221,
+                222,
+                236
+              ]
+            ],
+            [
+              [
+                242,
+                218,
+                219,
+                233
+              ]
+            ],
+            [
+              [
+                237,
+                223,
+                224,
+                238
+              ]
+            ],
+            [
+              [
+                236,
+                222,
+                223,
+                237
+              ]
+            ],
+            [
+              [
+                216,
+                217,
+                241,
+                240,
+                239,
+                229
+              ]
+            ],
+            [
+              [
+                238,
+                224,
+                225,
+                192
+              ]
+            ],
+            [
+              [
+                241,
+                217,
+                218,
+                242
+              ]
+            ],
+            [
+              [
+                234,
+                220,
+                221,
+                235
+              ]
+            ],
+            [
+              [
+                190,
+                228,
+                229,
+                239
+              ]
+            ],
+            [
+              [
+                233,
+                219,
+                220,
+                234
+              ]
+            ]
+          ],
+          "semantics": {
+            "values": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "surfaces": [
+              {
+                "type": "GroundSurface",
+                "id": "GroundSurface_UUID_2a09a878-fd54-4660-8fde-73a362e033c1",
+                "name": "GroundSurface 4906-484",
+                "lod2_area": 49.1378,
+                "inclination": 180.0,
+                "surf_normal": "0,0,-1",
+                "azimuth": -1.0
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_e9a43adf-0079-439f-bc12-afaef4bdee9f",
+                "name": "RoofSurface 4906-1976",
+                "lod2_area": 25.9554,
+                "inclination": 31.3679,
+                "surf_normal": "-0.11187257377073447,-0.508368025769598,0.8538421854259911",
+                "azimuth": 192.4108,
+                "direction": "S"
+              },
+              {
+                "type": "RoofSurface",
+                "id": "RoofSurface_UUID_0e8be101-8d24-43e7-a1f4-8d5d0a07ea02",
+                "name": "RoofSurface 4906-7055",
+                "lod2_area": 31.4738,
+                "inclination": 31.0079,
+                "surf_normal": "0.11412036799180408,0.5023570529085455,0.8570962215541823",
+                "azimuth": 12.7987,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_55984306-a528-444d-a2a6-a9fa2c66f1fc",
+                "name": "WallSurface 4906-1017 (split)",
+                "lod2_area": 0.0457,
+                "inclination": 90.0,
+                "surf_normal": "0.976566442308653178263367;-0.215216132658822683546165;0.000000000000000000000000",
+                "azimuth": 102.4282,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_5f5ad392-4e2a-4690-aef6-7d07c4cdb201",
+                "name": "WallSurface 4906-3108 (split)",
+                "lod2_area": 0.0002,
+                "inclination": 90.0,
+                "surf_normal": "0.976566442308653178263367;-0.215216132658822683546165;0.000000000000000000000000",
+                "azimuth": 102.4282,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_split_UUID_ce205507-1dad-46e5-b8f0-c39b4d78578d",
+                "name": "WallSurface 4906-3703 (split)",
+                "lod2_area": 0.012,
+                "inclination": 90.0,
+                "surf_normal": "0.976566442308653178263367;-0.215216132658822683546165;0.000000000000000000000000",
+                "azimuth": 102.4282,
+                "direction": "E"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_3caa1b86-8eea-40f8-9981-836449a9aedb",
+                "name": "WallSurface 4906-1737 (shared)",
+                "lod2_area": 0.6296,
+                "inclination": 90.0,
+                "surf_normal": "0.97656644230801672974568189;-0.21521613266171063742292440;0.00000000000000000000000000",
+                "azimuth": 102.4282,
+                "direction": "E",
+                "list_adjacent_buildings": "Building-2",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_shared_UUID_5f13e302-bb19-49af-ab68-b2fe862a989a",
+                "name": "WallSurface 4906-5635 (shared)",
+                "lod2_area": 50.5849,
+                "inclination": 90.0,
+                "surf_normal": "0.97656644230864741195661336;-0.21521613265884884878587686;0.00000000000001244231500263993003",
+                "azimuth": 102.4282,
+                "direction": "E",
+                "list_adjacent_buildings": "Building-2",
+                "adjacent_building_class": "Residential"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_7d699d35-a88e-48a0-a656-cb34e94e2616",
+                "name": "WallSurface 4906-3511",
+                "lod2_area": 0.6898,
+                "inclination": 90.0,
+                "surf_normal": "-0.9757895770087996,0.21871145694953387,0",
+                "azimuth": 282.6334,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_7e49f302-5f33-45d1-93fe-c0868d38ce2c",
+                "name": "WallSurface 4906-14687",
+                "lod2_area": 0.8585,
+                "inclination": 90.0,
+                "surf_normal": "-0.22082565289577888,-0.9753132989061273,0",
+                "azimuth": 192.7575,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_2d371484-2076-45be-9174-609d90ddd56a",
+                "name": "WallSurface 4906-15494",
+                "lod2_area": 36.1488,
+                "inclination": 90.0,
+                "surf_normal": "-0.21515690605736187,-0.9765794928093787,0",
+                "azimuth": 192.4247,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_b03808bf-ec02-4edf-97e7-831b5c9862fb",
+                "name": "WallSurface 4906-16244",
+                "lod2_area": 0.3021,
+                "inclination": 90.0,
+                "surf_normal": "-0.22903933347785188,-0.9734171683918572,0",
+                "azimuth": 193.2405,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_08797a41-639b-4de3-a03d-d029a41fc9a7",
+                "name": "WallSurface 4906-24387",
+                "lod2_area": 33.9731,
+                "inclination": 90.0,
+                "surf_normal": "0.22906610152255905,0.9734108696399772,0",
+                "azimuth": 13.2421,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_18c84fe1-966e-4114-ae2f-d6d21823fef9",
+                "name": "WallSurface 4906-41885",
+                "lod2_area": 0.5778,
+                "inclination": 90.0,
+                "surf_normal": "-0.20952908881019827,-0.9778024140604111,0",
+                "azimuth": 192.0948,
+                "direction": "S"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_1763ce04-2b7d-42eb-a6b9-0fc7ea30114c",
+                "name": "WallSurface 4906-47835",
+                "lod2_area": 27.973,
+                "inclination": 90.0,
+                "surf_normal": "-0.9775937902550692,0.21050031176871817,0",
+                "azimuth": 282.1517,
+                "direction": "W"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_6c4aa4d3-2367-4725-9a67-f7d883bd7e7c",
+                "name": "WallSurface 4906-51368",
+                "lod2_area": 0.3116,
+                "inclination": 90.0,
+                "surf_normal": "0.22485950753517536,0.9743911955016007,0",
+                "azimuth": 12.9946,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_1c5a9587-a778-4614-80b5-e5e4d6ea8b45",
+                "name": "WallSurface 4906-58132",
+                "lod2_area": 0.7705,
+                "inclination": 90.0,
+                "surf_normal": "0.2309896056807989,0.9729562179602065,0",
+                "azimuth": 13.3553,
+                "direction": "N"
+              },
+              {
+                "type": "WallSurface",
+                "id": "WallSurface_UUID_8d5a2ddc-0776-45ca-881a-2b910fa8b1c3",
+                "name": "WallSurface 4906-61201",
+                "lod2_area": 23.2153,
+                "inclination": 90.0,
+                "surf_normal": "-0.9740459665135152,0.22635029295044434,0",
+                "azimuth": 283.0823,
+                "direction": "W"
+              }
+            ]
+          },
+          "lod": "2"
+        }
+      ]
+    }
+  },
+  "vertices": [
+    [
+      977387,
+      447044,
+      12584
+    ],
+    [
+      986153,
+      445008,
+      12584
+    ],
+    [
+      986497,
+      444929,
+      12584
+    ],
+    [
+      986428,
+      444670,
+      12584
+    ],
+    [
+      986420,
+      444640,
+      12584
+    ],
+    [
+      986066,
+      443321,
+      12584
+    ],
+    [
+      985966,
+      442949,
+      12584
+    ],
+    [
+      991088,
+      440846,
+      12584
+    ],
+    [
+      991653,
+      440615,
+      12584
+    ],
+    [
+      991826,
+      440544,
+      12584
+    ],
+    [
+      992423,
+      443257,
+      12584
+    ],
+    [
+      992487,
+      443551,
+      12584
+    ],
+    [
+      992835,
+      443473,
+      12584
+    ],
+    [
+      992996,
+      443438,
+      12584
+    ],
+    [
+      993897,
+      447523,
+      12584
+    ],
+    [
+      994029,
+      448126,
+      12584
+    ],
+    [
+      994859,
+      451890,
+      12584
+    ],
+    [
+      994613,
+      451946,
+      12584
+    ],
+    [
+      994635,
+      452092,
+      12584
+    ],
+    [
+      979346,
+      455525,
+      12584
+    ],
+    [
+      979327,
+      455444,
+      12584
+    ],
+    [
+      979261,
+      455157,
+      12584
+    ],
+    [
+      975098,
+      456205,
+      12584
+    ],
+    [
+      974794,
+      456281,
+      12584
+    ],
+    [
+      973752,
+      452038,
+      12584
+    ],
+    [
+      973738,
+      451984,
+      12584
+    ],
+    [
+      973788,
+      451972,
+      12584
+    ],
+    [
+      978072,
+      450992,
+      12584
+    ],
+    [
+      978009,
+      450704,
+      12584
+    ],
+    [
+      978212,
+      450616,
+      12584
+    ],
+    [
+      977399,
+      447095,
+      12584
+    ],
+    [
+      992835,
+      443473,
+      19029
+    ],
+    [
+      992996,
+      443438,
+      19029
+    ],
+    [
+      993897,
+      447523,
+      21215
+    ],
+    [
+      993711,
+      447564,
+      21215
+    ],
+    [
+      979375,
+      450778,
+      21212
+    ],
+    [
+      979300,
+      450145,
+      20881
+    ],
+    [
+      978212,
+      450616,
+      20996
+    ],
+    [
+      977399,
+      447095,
+      19108
+    ],
+    [
+      977387,
+      447044,
+      19081
+    ],
+    [
+      986153,
+      445008,
+      19046
+    ],
+    [
+      986497,
+      444929,
+      19045
+    ],
+    [
+      986428,
+      444670,
+      18905
+    ],
+    [
+      986905,
+      444558,
+      18903
+    ],
+    [
+      992283,
+      443290,
+      18872
+    ],
+    [
+      992423,
+      443257,
+      18871
+    ],
+    [
+      992487,
+      443551,
+      19028
+    ],
+    [
+      994859,
+      451890,
+      18879
+    ],
+    [
+      994613,
+      451946,
+      18879
+    ],
+    [
+      994635,
+      452092,
+      18802
+    ],
+    [
+      979346,
+      455525,
+      18796
+    ],
+    [
+      979327,
+      455444,
+      18839
+    ],
+    [
+      979261,
+      455157,
+      18993
+    ],
+    [
+      978435,
+      451579,
+      20910
+    ],
+    [
+      978305,
+      451017,
+      21212
+    ],
+    [
+      978212,
+      450616,
+      21427
+    ],
+    [
+      979300,
+      450145,
+      21543
+    ],
+    [
+      994029,
+      448126,
+      20892
+    ],
+    [
+      973738,
+      451984,
+      15165
+    ],
+    [
+      973788,
+      451972,
+      15165
+    ],
+    [
+      978072,
+      450992,
+      15176
+    ],
+    [
+      978009,
+      450704,
+      15174
+    ],
+    [
+      978212,
+      450616,
+      15174
+    ],
+    [
+      978305,
+      451017,
+      15178
+    ],
+    [
+      978435,
+      451579,
+      15183
+    ],
+    [
+      979261,
+      455157,
+      15217
+    ],
+    [
+      975098,
+      456205,
+      15206
+    ],
+    [
+      974794,
+      456281,
+      15205
+    ],
+    [
+      973752,
+      452038,
+      15165
+    ],
+    [
+      986420,
+      444640,
+      15700
+    ],
+    [
+      986066,
+      443321,
+      15699
+    ],
+    [
+      985966,
+      442949,
+      15699
+    ],
+    [
+      991088,
+      440846,
+      15689
+    ],
+    [
+      991653,
+      440615,
+      15687
+    ],
+    [
+      991826,
+      440544,
+      15687
+    ],
+    [
+      992423,
+      443257,
+      15687
+    ],
+    [
+      992283,
+      443290,
+      15688
+    ],
+    [
+      986905,
+      444558,
+      15699
+    ],
+    [
+      986428,
+      444670,
+      15700
+    ],
+    [
+      991088,
+      440846,
+      12593
+    ],
+    [
+      985966,
+      442949,
+      12593
+    ],
+    [
+      973738,
+      451984,
+      12608
+    ],
+    [
+      973752,
+      452038,
+      12608
+    ],
+    [
+      991826,
+      440544,
+      12593
+    ],
+    [
+      991653,
+      440615,
+      12593
+    ],
+    [
+      974794,
+      456281,
+      12608
+    ],
+    [
+      981595,
+      440826,
+      12593
+    ],
+    [
+      981578,
+      440773,
+      12593
+    ],
+    [
+      984174,
+      439712,
+      12593
+    ],
+    [
+      982932,
+      436671,
+      12593
+    ],
+    [
+      982917,
+      436636,
+      12593
+    ],
+    [
+      983177,
+      436529,
+      12593
+    ],
+    [
+      986536,
+      435154,
+      12593
+    ],
+    [
+      989784,
+      433824,
+      12593
+    ],
+    [
+      989915,
+      433771,
+      12593
+    ],
+    [
+      989964,
+      433889,
+      12593
+    ],
+    [
+      992469,
+      440018,
+      12593
+    ],
+    [
+      992603,
+      440347,
+      12593
+    ],
+    [
+      992477,
+      440375,
+      12593
+    ],
+    [
+      991821,
+      440522,
+      12593
+    ],
+    [
+      989511,
+      441494,
+      12593
+    ],
+    [
+      989187,
+      441627,
+      12593
+    ],
+    [
+      989057,
+      441680,
+      12593
+    ],
+    [
+      985536,
+      443045,
+      12593
+    ],
+    [
+      985330,
+      443129,
+      12593
+    ],
+    [
+      985260,
+      442915,
+      12593
+    ],
+    [
+      982581,
+      443909,
+      12593
+    ],
+    [
+      988983,
+      441128,
+      20689
+    ],
+    [
+      989359,
+      440871,
+      20415
+    ],
+    [
+      989179,
+      440132,
+      20346
+    ],
+    [
+      988687,
+      440404,
+      20690
+    ],
+    [
+      986568,
+      435232,
+      20698
+    ],
+    [
+      986536,
+      435154,
+      20698
+    ],
+    [
+      989784,
+      433824,
+      18533
+    ],
+    [
+      989915,
+      433771,
+      18446
+    ],
+    [
+      989964,
+      433889,
+      18445
+    ],
+    [
+      992469,
+      440018,
+      18440
+    ],
+    [
+      992603,
+      440347,
+      18439
+    ],
+    [
+      992477,
+      440375,
+      18518
+    ],
+    [
+      991821,
+      440522,
+      18927
+    ],
+    [
+      991826,
+      440544,
+      18929
+    ],
+    [
+      989511,
+      441494,
+      20473
+    ],
+    [
+      989187,
+      441627,
+      20689
+    ],
+    [
+      989129,
+      441478,
+      20687
+    ],
+    [
+      989179,
+      440132,
+      21517
+    ],
+    [
+      989359,
+      440871,
+      21588
+    ],
+    [
+      988983,
+      441128,
+      21645
+    ],
+    [
+      988802,
+      441251,
+      21673
+    ],
+    [
+      988394,
+      440566,
+      21625
+    ],
+    [
+      988687,
+      440404,
+      21584
+    ],
+    [
+      984289,
+      439940,
+      15658
+    ],
+    [
+      985260,
+      442915,
+      15690
+    ],
+    [
+      982581,
+      443909,
+      15705
+    ],
+    [
+      981595,
+      440826,
+      15672
+    ],
+    [
+      988394,
+      440566,
+      20486
+    ],
+    [
+      988802,
+      441251,
+      20558
+    ],
+    [
+      989129,
+      441478,
+      20691
+    ],
+    [
+      989057,
+      441680,
+      20602
+    ],
+    [
+      985966,
+      442949,
+      18546
+    ],
+    [
+      985536,
+      443045,
+      18279
+    ],
+    [
+      985330,
+      443129,
+      18142
+    ],
+    [
+      985260,
+      442915,
+      18152
+    ],
+    [
+      984289,
+      439940,
+      18298
+    ],
+    [
+      981595,
+      440826,
+      16557
+    ],
+    [
+      981578,
+      440773,
+      16560
+    ],
+    [
+      984174,
+      439712,
+      18286
+    ],
+    [
+      982932,
+      436671,
+      18292
+    ],
+    [
+      982917,
+      436636,
+      18292
+    ],
+    [
+      983177,
+      436529,
+      18465
+    ],
+    [
+      983177,
+      436529,
+      18456
+    ],
+    [
+      984389,
+      436033,
+      19271
+    ],
+    [
+      989906,
+      433775,
+      18452
+    ],
+    [
+      989915,
+      433771,
+      12606
+    ],
+    [
+      983177,
+      436529,
+      12606
+    ],
+    [
+      982917,
+      436636,
+      18281
+    ],
+    [
+      982917,
+      436636,
+      12606
+    ],
+    [
+      991089,
+      440846,
+      15689
+    ],
+    [
+      985966,
+      442948,
+      15699
+    ],
+    [
+      985966,
+      442948,
+      12593
+    ],
+    [
+      991089,
+      440846,
+      12593
+    ],
+    [
+      984410,
+      436024,
+      19285
+    ],
+    [
+      960861,
+      459708,
+      12618
+    ],
+    [
+      959967,
+      455650,
+      12618
+    ],
+    [
+      959238,
+      452342,
+      12618
+    ],
+    [
+      959214,
+      452236,
+      12618
+    ],
+    [
+      959309,
+      452215,
+      12618
+    ],
+    [
+      965379,
+      450877,
+      12618
+    ],
+    [
+      965406,
+      450991,
+      12618
+    ],
+    [
+      965582,
+      450952,
+      12618
+    ],
+    [
+      966287,
+      454223,
+      12618
+    ],
+    [
+      967167,
+      458301,
+      12618
+    ],
+    [
+      967113,
+      458313,
+      12618
+    ],
+    [
+      961035,
+      459669,
+      12618
+    ],
+    [
+      965406,
+      450991,
+      18481
+    ],
+    [
+      965582,
+      450952,
+      18482
+    ],
+    [
+      966287,
+      454223,
+      20492
+    ],
+    [
+      966166,
+      454251,
+      20492
+    ],
+    [
+      960098,
+      455621,
+      20494
+    ],
+    [
+      959967,
+      455650,
+      20494
+    ],
+    [
+      959238,
+      452342,
+      18458
+    ],
+    [
+      959214,
+      452236,
+      18393
+    ],
+    [
+      959309,
+      452215,
+      18393
+    ],
+    [
+      965379,
+      450877,
+      18411
+    ],
+    [
+      967167,
+      458301,
+      17983
+    ],
+    [
+      967113,
+      458313,
+      17983
+    ],
+    [
+      961035,
+      459669,
+      17994
+    ],
+    [
+      960861,
+      459708,
+      17995
+    ],
+    [
+      959588,
+      453933,
+      19437
+    ],
+    [
+      959238,
+      452342,
+      18444
+    ],
+    [
+      960855,
+      459682,
+      12618
+    ],
+    [
+      960855,
+      459682,
+      18005
+    ],
+    [
+      959966,
+      455645,
+      20491
+    ],
+    [
+      959214,
+      452236,
+      18377
+    ],
+    [
+      959591,
+      453944,
+      19444
+    ],
+    [
+      970839,
+      457166,
+      12608
+    ],
+    [
+      970781,
+      457179,
+      12608
+    ],
+    [
+      968514,
+      447283,
+      12608
+    ],
+    [
+      968783,
+      447224,
+      12608
+    ],
+    [
+      969070,
+      447162,
+      12608
+    ],
+    [
+      972188,
+      446486,
+      12608
+    ],
+    [
+      972224,
+      446622,
+      12608
+    ],
+    [
+      972413,
+      446589,
+      12608
+    ],
+    [
+      974795,
+      456283,
+      12608
+    ],
+    [
+      968514,
+      447283,
+      15138
+    ],
+    [
+      968783,
+      447224,
+      15138
+    ],
+    [
+      969070,
+      447162,
+      15139
+    ],
+    [
+      972188,
+      446486,
+      15139
+    ],
+    [
+      972224,
+      446622,
+      15140
+    ],
+    [
+      972413,
+      446589,
+      15140
+    ],
+    [
+      973738,
+      451984,
+      15181
+    ],
+    [
+      974795,
+      456283,
+      15213
+    ],
+    [
+      970839,
+      457166,
+      15213
+    ],
+    [
+      970781,
+      457179,
+      15213
+    ],
+    [
+      973739,
+      451984,
+      12608
+    ],
+    [
+      973739,
+      451984,
+      15165
+    ],
+    [
+      973739,
+      451984,
+      15181
+    ],
+    [
+      954740,
+      461122,
+      12612
+    ],
+    [
+      954567,
+      461162,
+      12612
+    ],
+    [
+      953679,
+      457038,
+      12612
+    ],
+    [
+      953785,
+      457014,
+      12612
+    ],
+    [
+      953020,
+      453722,
+      12612
+    ],
+    [
+      952968,
+      453734,
+      12612
+    ],
+    [
+      952942,
+      453618,
+      12612
+    ],
+    [
+      952993,
+      453606,
+      12612
+    ],
+    [
+      959116,
+      452257,
+      12612
+    ],
+    [
+      959214,
+      452236,
+      12612
+    ],
+    [
+      959232,
+      452316,
+      12612
+    ],
+    [
+      959963,
+      455633,
+      12612
+    ],
+    [
+      960855,
+      459682,
+      12612
+    ],
+    [
+      960716,
+      459715,
+      12612
+    ],
+    [
+      959232,
+      452316,
+      18428
+    ],
+    [
+      959963,
+      455633,
+      20498
+    ],
+    [
+      959846,
+      455659,
+      20498
+    ],
+    [
+      953785,
+      457014,
+      20511
+    ],
+    [
+      953020,
+      453722,
+      18451
+    ],
+    [
+      952968,
+      453734,
+      18451
+    ],
+    [
+      952942,
+      453618,
+      18378
+    ],
+    [
+      952993,
+      453606,
+      18378
+    ],
+    [
+      959116,
+      452257,
+      18377
+    ],
+    [
+      960716,
+      459715,
+      18005
+    ],
+    [
+      954740,
+      461122,
+      17976
+    ],
+    [
+      954567,
+      461162,
+      17975
+    ],
+    [
+      953679,
+      457038,
+      20511
+    ],
+    [
+      959237,
+      452342,
+      12618
+    ],
+    [
+      959375,
+      452966,
+      18834
+    ],
+    [
+      959214,
+      452238,
+      18378
+    ],
+    [
+      959237,
+      452342,
+      18444
+    ],
+    [
+      959607,
+      454021,
+      19492
+    ],
+    [
+      959965,
+      455645,
+      20491
+    ],
+    [
+      959590,
+      453943,
+      19444
+    ]
+  ],
+  "extensions": {},
+  "transform": {
+    "scale": [
+      0.001,
+      0.001,
+      0.001
+    ],
+    "translate": [
+      231999.999,
+      484034.378,
+      0.0
+    ]
+  }
+}

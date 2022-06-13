@@ -1,0 +1,1785 @@
+{
+  "type": "CityJSONExtension",
+  "name": "Energy",
+  "uri": "https://raw.githubusercontent.com/ozgetufan/cjenergy/master/version11/schemas/extensions/energy.ext.json",
+  "version": "1.1.0",
+  "versionCityJSON": "1.1",
+  "description": "Extension for storing energy-related data",
+  "definitions": {
+    "Energy-Measure": {
+      "type": "object",
+      "properties": {
+        "energy-value": {
+          "type": "number"
+        },
+        "energy-uom": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "energy-value",
+        "energy-uom"
+      ]
+    },
+    "Energy-VolumeType": {
+      "type": "object",
+      "properties": {
+        "energy-type": {
+          "enum": [
+            "netVolume",
+            "grossVolume",
+            "energyReferenceVolume"
+          ]
+        },
+        "energy-value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "energy-type",
+        "energy-value"
+      ]
+    },
+    "Energy-FloorArea": {
+      "type": "object",
+      "properties": {
+        "energy-type": {
+          "enum": [
+            "netFloorArea",
+            "grossFloorArea",
+            "energyReferenceArea"
+          ]
+        },
+        "energy-value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "energy-type",
+        "energy-value"
+      ]
+    },
+    "Energy-HeightAboveGround": {
+      "type": "object",
+      "properties": {
+        "energy-heightReference": {
+          "enum": [
+            "bottomOfConstruction",
+            "entrancePoint",
+            "generalEave",
+            "generalRoof",
+            "generalRoofEdge",
+            "highestEave",
+            "highestPoint",
+            "highestRoofEdge",
+            "lowestEave",
+            "lowestFloorAboveGround",
+            "lowestRoofEdge",
+            "topOfConstruction",
+            "topThermalBoundary",
+            "bottomThermalBoundary"
+          ]
+        },
+        "energy-value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "energy-heightReference",
+        "energy-value"
+      ]
+    },
+    "Energy-Transmittance": {
+      "type": "object",
+      "properties": {
+        "energy-fraction": {
+          "type": "number"
+        },
+        "energy-wavelengthRange": {
+          "enum": [
+            "solar",
+            "infrared",
+            "visible",
+            "total"
+          ]
+        }
+      },
+      "required": [
+        "energy-fraction",
+        "energy-wavelengthRange"
+      ]
+    },
+    "Energy-HeatExchangeType": {
+      "type": "object",
+      "properties": {
+        "energy-convectiveFraction": {
+          "type": "number"
+        },
+        "energy-latentFraction": {
+          "type": "number"
+        },
+        "energy-radiantFraction": {
+          "type": "number"
+        },
+        "energy-totalValue": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "energy-totalValue"
+      ]
+    },
+    "Energy-Reflectance": {
+      "type": "object",
+      "properties": {
+        "energy-fraction": {
+          "type": "number"
+        },
+        "energy-surface": {
+          "enum": [
+            "inside",
+            "outside"
+          ]
+        },
+        "energy-wavelengthRange": {
+          "enum": [
+            "solar",
+            "infrared",
+            "visible",
+            "total"
+          ]
+        }
+      },
+      "required": [
+        "energy-fraction",
+        "energy-surface",
+        "energy-wavelengthRange"
+      ]
+    },
+    "Energy-OpticalProperties": {
+      "type": "object",
+      "properties": {
+        "energy-reflectance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Energy-Reflectance"
+          }
+        },
+        "energy-transmittance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Energy-Transmittance"
+          }
+        },
+        "energy-glazingRatio": {
+          "type": "number"
+        }
+      }
+    },
+    "Energy-TMPeriod": {
+      "type": "object",
+      "properties": {
+        "energy-startPeriod": {
+          "type": "string",
+          "format": "date"
+        },
+        "energy-endPeriod": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "energy-startPeriod",
+        "energy-endPeriod"
+      ]
+    },
+    "Energy-WeatherData": {
+      "type": "object",
+      "properties": {
+        "energy-weatherElement": {
+          "enum": [
+            "airTemperature",
+            "humidity",
+            "windSpeed",
+            "cloudiness",
+            "globalSolarIrradiance",
+            "directSolarIrradiance",
+            "diffuseSolarIrradiance",
+            "terrestrialEmission",
+            "downwardTerrestrialRadiation",
+            "daylightIlluminance"
+          ]
+        },
+        "energy-weatherDataLocation": {
+          "type": "string",
+          "description": "Differentiates subtypes of weather data"
+        },
+        "energy-values": {
+          "type": "string",
+          "description": "ID of RegularTimeSeries or RegularTimeSeriesFile object"
+        },
+        "energy-position": {
+          "type": "string",
+          "description": "Vertex number from the vertices array"
+        }
+      },
+      "required": [
+        "energy-weatherElement",
+        "energy-values"
+      ]
+    },
+    "Energy-EnergyDemand": {
+      "type": "object",
+      "properties": {
+        "energy-energyAmount": {
+          "type": "string",
+          "description": "ID of the RegularTimeSeries or RegularTimeSeriesFile object"
+        },
+        "energy-endUse": {
+          "enum": [
+            "cooking",
+            "domesticHotWater",
+            "electricalAppliances",
+            "lighting",
+            "otherOrCombination",
+            "spaceCooling",
+            "spaceHeating",
+            "ventilation",
+            "process"
+          ]
+        },
+        "energy-maximumLoad": {
+          "type": "number"
+        },
+        "energy-energyCarrierType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "energy-energyAmount",
+        "energy-endUse"
+      ]
+    }
+  },
+  "extraAttributes": {
+    "OtherConstruction": {
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      },
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      }
+    },
+    "Building": {
+      "+energy-buildingType": {
+        "type": "string"
+      },
+      "+energy-constructionWeight": {
+        "enum": [
+          "veryLight",
+          "light",
+          "medium",
+          "heavy"
+        ]
+      },
+      "+energy-volume": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-VolumeType"
+        }
+      },
+      "+energy-floorArea": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-FloorArea"
+        }
+      },
+      "+energy-heightAboveGround": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-HeightAboveGround"
+        }
+      },
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      },
+      "+energy-function": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "+energy-referencePoint": {
+        "type": "string",
+        "description": "Vertex number from the vertices array"
+      }
+    },
+    "BuildingPart": {
+      "+energy-buildingType": {
+        "type": "string"
+      },
+      "+energy-constructionWeight": {
+        "enum": [
+          "veryLight",
+          "light",
+          "medium",
+          "heavy"
+        ]
+      },
+      "+energy-volume": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-VolumeType"
+        }
+      },
+      "+energy-floorArea": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-FloorArea"
+        }
+      },
+      "+energy-heightAboveGround": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-HeightAboveGround"
+        }
+      },
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      },
+      "+energy-function": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "+energy-referencePoint": {
+        "type": "string",
+        "description": "Vertex number from the vertices array"
+      }
+    },
+    "BuildingInstallation": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BuildingConstructiveElement": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BuildingFurniture": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BuildingRoom": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BuildingUnit": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BuildingStorey": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "CityObjectGroup": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "Tunnel": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TunnelPart": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TunnelInstallation": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TunnelConstructiveElement": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TunnelHollowSpace": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TunnelFurniture": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "Bridge": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BridgePart": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BridgeInstallation": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BridgeConstructiveElement": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BridgeRoom": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "BridgeFurniture": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "Road": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "Railway": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TransportSquare": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "Waterway": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "TINRelief": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "WaterBody": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "PlantCover": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "SolitaryVegetationObject": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "LandUse": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    },
+    "CityFurniture": {
+      "+energy-weatherData": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-WeatherData"
+        }
+      },
+      "+energy-energyDemand": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Energy-EnergyDemand"
+        }
+      }
+    }
+  },
+  "extraCityObjects": {
+    "+Energy-ThermalZone": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-ThermalZone"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "energy-floorArea": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-FloorArea"
+                  }
+                },
+                "energy-volume": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-VolumeType"
+                  }
+                },
+                "energy-infiltrationRate": {
+                  "type": "number"
+                },
+                "energy-isCooled": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "energy-isHeated": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "energy-weatherData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-WeatherData"
+                  }
+                },
+                "energy-energyDemand": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-EnergyDemand"
+                  }
+                },
+                "energy-perimeter": {
+                  "type": "number",
+                  "description": "Perimeter of the ThermalZone"
+                }
+              }
+            },
+            "parents": {
+              "type": "array",
+              "description": "the ID of the parent Building/BuildingPart",
+              "items": {
+                "type": "string"
+              }
+            },
+            "children": {
+              "type": "array",
+              "description": "the IDs of the children UsageZones",
+              "items": {
+                "type": "string"
+              }
+            },
+            "energy-boundedBy": {
+              "type": "array",
+              "description": "the IDs of the ThermalBoundary objects that bound the ThermalZone",
+              "items": {
+                "type": "string"
+              }
+            },
+            "geometry": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "$ref": "geomprimitives.schema.json#/Solid"
+                  },
+                  {
+                    "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                  }
+                ]
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "type", "parents"
+          ]
+        }
+      ]
+    },
+    "+Energy-ThermalBoundary": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-ThermalBoundary"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "energy-thermalBoundaryType": {
+                  "enum": [
+                    "interiorWall",
+                    "intermediaryFloor",
+                    "sharedWall",
+                    "outerWall",
+                    "groundSlab",
+                    "basementCeiling",
+                    "atticFloor",
+                    "roof"
+                  ]
+                },
+                "energy-azimuth": {
+                  "type": ["number", "null"],
+                  "description": "Azimuth of the surface as number, or, if flat, null"
+                },
+                "energy-inclination": {
+                  "type": "number"
+                },
+                "energy-area": {
+                  "type": "number"
+                },
+                "energy-orientation": {
+                  "type": "string"
+                },
+                "energy-slope": {
+                  "type": "number"
+                },
+                "energy-windowRatio": {
+                  "type": "number"
+                },
+                "energy-weatherData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-WeatherData"
+                  }
+                },
+                "energy-energyDemand": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-EnergyDemand"
+                  }
+                }
+              },
+              "required": [
+                "energy-thermalBoundaryType"
+              ]
+            },
+            "energy-delimits": {
+              "type": "array",
+              "description": "the ID(s) of the ThermalZones",
+              "items": {
+                "type": "string"
+              }
+            },
+            "energy-contains": {
+              "type": "array",
+              "description": "the IDs of the ThermalOpening objects",
+              "items": {
+                "type": "string"
+              }
+            },
+            "energy-opaqueConstruction": {
+              "type": "string",
+              "description": "ID of the Opaque Construction object"
+            },
+            "energy-transparentConstruction": {
+              "type": "string",
+              "description": "ID of the Transparent Construction object"
+            },
+            "geometry": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "$ref": "geomprimitives.schema.json#/MultiSurface"
+                  }
+                ]
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "type",
+            "attributes",
+            "energy-delimits"
+          ]
+        }
+      ]
+    },
+    "+Energy-ThermalOpening": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-ThermalOpening"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "energy-area": {
+                  "type": "number"
+                },
+                "energy-weatherData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-WeatherData"
+                  }
+                },
+                "energy-energyDemand": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-EnergyDemand"
+                  }
+                }
+              }
+            },
+            "energy-construction": {
+              "type": "string",
+              "description": "ID of the Construction object"
+            },
+            "geometry": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "$ref": "geomprimitives.schema.json#/MultiSurface"
+                  }
+                ]
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    },
+    "+Energy-UsageZone": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-UsageZone"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "energy-coolingSchedule": {
+                  "type": "string",
+                  "description": "ID of DailyPatternSchedule object"
+                },
+                "energy-heatingSchedule": {
+                  "type": "string",
+                  "description": "ID of DailyPatternSchedule object"
+                },
+                "energy-usageZoneType": {
+                  "type": "string"
+                },
+                "energy-ventilationSchedule": {
+                  "type": "string",
+                  "description": "ID of DailyPatternSchedule object"
+                },
+                "energy-floorArea": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-FloorArea"
+                  }
+                },
+                "energy-weatherData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-WeatherData"
+                  }
+                },
+                "energy-energyDemand": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-EnergyDemand"
+                  }
+                },
+                "energy-numberOfResidentialFunctions": {
+                  "type": "number",
+                  "description": "Number of residential functions inside the UsageZone"
+                }
+              },
+              "required": [
+                "energy-usageZoneType"
+              ]
+            },
+            "energy-occupiedBy": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "IDs of the Occupants objects"
+            },
+            "parents": {
+              "type": "array",
+              "description": "the ID of the either parent Building/BuildingPart or ThermalZone",
+              "items": {
+                "type": "string"
+              }
+            },
+            "children": {
+              "type": "array",
+              "description": "the IDs of the children Facilities",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "attributes",
+            "parents"
+          ]
+        }
+      ]
+    },
+    "+Energy-Facilities": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-Facilities", "+Energy-DHWFacilities", "+Energy-ElectricalAppliances", "+Energy-LightingFacilities"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "energy-operationSchedule": {
+                  "type": "string",
+                  "description": "ID of DailyPatternSchedule object"
+                },
+                "energy-heatDissipation": {
+                  "$ref": "#/definitions/Energy-HeatExchangeType"
+                },
+                "energy-weatherData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-WeatherData"
+                  }
+                },
+                "energy-energyDemand": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-EnergyDemand"
+                  }
+                }
+              }
+            },
+            "parents": {
+              "type": "array",
+              "description": "the ID of the parent Usage Zone",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    },
+    "+Energy-DHWFacilities": {
+      "allOf": [
+        {
+          "$ref": "#/extraCityObjects/+Energy-Facilities"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-DHWFacilities"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    },
+    "+Energy-ElectricalAppliances": {
+      "allOf": [
+        {
+          "$ref": "#/extraCityObjects/+Energy-Facilities"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-ElectricalAppliances"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    },
+    "+Energy-LightingFacilities": {
+      "allOf": [
+        {
+          "$ref": "#/extraCityObjects/+Energy-Facilities"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-LightingFacilities"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    },
+    "+Energy-Occupants": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-Occupants"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-heatDissipation": {
+              "$ref": "#/definitions/Energy-HeatExchangeType"
+            },
+            "energy-numberOfOccupants": {
+              "type": "integer"
+            },
+            "energy-occupancyRate": {
+              "type": "string",
+              "description": "ID of DailyPatternSchedule object"
+            }
+          }
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "+Energy-WeatherStation": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "+Energy-WeatherStation"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "energy-stationName": {
+                  "type": "string"
+                },
+                "energy-weatherData": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-WeatherData"
+                  }
+                },
+                "energy-energyDemand": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Energy-EnergyDemand"
+                  }
+                }
+              }
+            },
+            "geometry": {
+              "type": "array",
+              "description": "to store the position of the WeatherStation",
+              "items": {
+                "oneOf": [
+                  {
+                    "$ref": "geomprimitives.schema.json#/MultiPoint"
+                  }
+                ]
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      ]
+    },
+    "+Energy-Construction": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-Construction"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-uValue": {
+              "type": "number"
+            },
+            "energy-gValue": {
+              "type": "number"
+            },
+            "energy-rValue": {
+              "type": "number"
+            },
+            "energy-opticalProperties": {
+              "$ref": "#/definitions/Energy-OpticalProperties"
+            }
+          }
+        },
+        "energy-layer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "IDs of the Layer objects (ordered)"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "+Energy-Layer": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-Layer"
+          ]
+        },
+        "attributes": {},
+        "energy-layerComponent": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "ID(s) of the LayerComponent objects"
+        }
+      },
+      "required": ["type", "energy-layerComponent"]
+    },
+    "+Energy-LayerComponent": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-LayerComponent"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-areaFraction": {
+              "type": "number",
+              "default": 1.0
+            },
+            "energy-thickness": {
+              "type": "number"
+            }
+          }
+        },
+        "energy-material": {
+          "type": "string",
+          "description": "ID of the Gas or SolidMaterial object"
+        }
+      },
+      "required": [
+        "type", "energy-material"
+      ]
+    },
+    "+Energy-Gas": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-Gas"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-isVentilated": {
+              "type": "boolean",
+              "default": false
+            },
+            "energy-rValue": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "+Energy-SolidMaterial": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-SolidMaterial"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-conductivity": {
+              "type": "number"
+            },
+            "energy-density": {
+              "type": "number"
+            },
+            "energy-permeance": {
+              "type": "number"
+            },
+            "energy-specificHeat": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "+Energy-RegularTimeSeries": {
+      "type": "object",
+      "properties": {
+        "type": {"enum": ["+Energy-RegularTimeSeries"]},
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-acquisitionMethod": {
+              "enum": [
+                "measurement",
+                "simulation",
+                "calibratedSimulation",
+                "estimation",
+                "unknown"
+              ]
+            },
+            "energy-interpolationType": {
+              "enum": [
+                "averageInPrecedingInterval",
+                "averageInSucceedingInterval",
+                "constantInPrecedingInterval",
+                "constantInSucceedingInterval",
+                "continuous",
+                "discontinuous",
+                "instantaneousTotal",
+                "maximumInPrecedingInterval",
+                "maximumInSucceedingInterval",
+                "minimumInPrecedingInterval",
+                "minimumInSucceedingInterval",
+                "precedingTotal",
+                "succeedingTotal"
+              ]
+            },
+            "energy-qualityDescription": {
+              "type": "string"
+            },
+            "energy-source": {
+              "type": "string"
+            },
+            "energy-thematicDescription": {
+              "type": "string"
+            },
+            "energy-temporalExtent": {
+              "$ref": "#/definitions/Energy-TMPeriod"
+            },
+            "energy-timeInterval": {
+              "$ref": "#/definitions/Energy-Measure"
+            },
+            "energy-values": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          },
+          "required": ["energy-acquisitionMethod", "energy-interpolationType",
+            "energy-temporalExtent", "energy-timeInterval", "energy-values"]
+        }
+      },
+      "required": ["type", "attributes"]
+    },
+    "+Energy-RegularTimeSeriesFile": {
+      "type": "object",
+      "properties": {
+        "type": {"enum": ["+Energy-RegularTimeSeriesFile"]},
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "energy-acquisitionMethod": {
+              "enum": [
+                "measurement",
+                "simulation",
+                "calibratedSimulation",
+                "estimation",
+                "unknown"
+              ]
+            },
+            "energy-interpolationType": {
+              "enum": [
+                "averageInPrecedingInterval",
+                "averageInSucceedingInterval",
+                "constantInPrecedingInterval",
+                "constantInSucceedingInterval",
+                "continuous",
+                "discontinuous",
+                "instantaneousTotal",
+                "maximumInPrecedingInterval",
+                "maximumInSucceedingInterval",
+                "minimumInPrecedingInterval",
+                "minimumInSucceedingInterval",
+                "precedingTotal",
+                "succeedingTotal"
+              ]
+            },
+            "energy-qualityDescription": {
+              "type": "string"
+            },
+            "energy-source": {
+              "type": "string"
+            },
+            "energy-thematicDescription": {
+              "type": "string"
+            },
+            "energy-uom": {
+              "type": "string"
+            },
+            "energy-file": {
+              "type": "string",
+              "format": "uri"
+            },
+            "energy-temporalExtent": {
+              "$ref": "#/definitions/Energy-TMPeriod"
+            },
+            "energy-timeInterval": {
+              "$ref": "#/definitions/Energy-Measure"
+            },
+            "energy-numberOfHeaderLines": {
+              "type": "integer",
+              "default": 0
+            },
+            "energy-fieldSeparator": {
+              "type": "string"
+            },
+            "energy-recordSeparator": {
+              "type": "string",
+              "default": "\n"
+            },
+            "energy-decimalSymbol": {
+              "type": "string",
+              "default": "."
+            },
+            "energy-valueColumnNumber": {
+              "type": "integer",
+              "default": 1
+            }
+          },
+          "required": ["energy-acquisitionMethod", "energy-interpolationType", "energy-uom",
+                        "energy-file", "energy-temporalExtent", "energy-timeInterval", "energy-fieldSeparator"]
+        }
+      },
+      "required": ["type", "attributes"]
+    },
+    "+Energy-DailyPatternSchedule": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "+Energy-DailyPatternSchedule"
+          ]
+        },
+        "energy-periodOfYear": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "energy-period": {
+                "$ref": "#/definitions/Energy-TMPeriod"
+              },
+              "energy-dailySchedule": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "energy-dayType": {
+                      "enum": [
+                        "monday",
+                        "tuesday",
+                        "wednesday",
+                        "thursday",
+                        "friday",
+                        "saturday",
+                        "sunday",
+                        "designDay",
+                        "weekDay",
+                        "weekEnd",
+                        "typicalDay"
+                      ]
+                    },
+                    "energy-schedule": {
+                      "type": "string",
+                      "description": "ID of RegularTimeSeries or RegularTimeSeriesFile object"
+                    }
+                  },
+                  "required": [
+                    "energy-dayType",
+                    "energy-schedule"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "energy-period",
+              "energy-dailySchedule"
+            ]
+          }
+        }
+      },
+      "required": ["type", "energy-periodOfYear"]
+    }
+  },
+  "extraRootProperties": {
+    "+unitOfMeasurement": {
+      "type": "object",
+      "properties": {
+        "energy-volume": {
+          "type": "string",
+          "default": "m^3"
+        },
+        "energy-floorArea": {
+          "type": "string",
+          "default": "m^2"
+        },
+        "energy-heightAboveGround": {
+          "type": "string",
+          "default": "m"
+        },
+        "energy-energyDemand": {
+          "type": "string",
+          "default": "kWh"
+        },
+        "energy-maximumLoad": {
+          "type": "string"
+        },
+        "energy-infiltrationRate": {
+          "type": "string"
+        },
+        "energy-azimuth": {
+          "type": "string",
+          "default": "degrees"
+        },
+        "energy-inclination": {
+          "type": "string",
+          "default": "degrees"
+        },
+        "energy-area": {
+          "type": "string",
+          "default": "m^2"
+        },
+        "energy-uValue": {
+          "type": "string",
+          "default": "W/(m^2K)"
+        },
+        "energy-reflectance": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-transmittance": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-glazingRatio": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-areaFraction": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-thickness": {
+          "type": "string"
+        },
+        "energy-rValue": {
+          "type": "string",
+          "default": "(m^2K)/W"
+        },
+        "energy-conductivity": {
+          "type": "string"
+        },
+        "energy-density": {
+          "type": "string"
+        },
+        "energy-permeance": {
+          "type": "string"
+        },
+        "energy-specificHeat": {
+          "type": "string"
+        },
+        "energy-convectiveFraction": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-latentFraction": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-radiantFraction": {
+          "type": "string",
+          "default": "scale"
+        },
+        "energy-totalValue": {
+          "type": "string"
+        },
+        "energy-perimeter": {
+          "type": "string",
+          "default": "m"
+        },
+        "energy-slope": {
+          "type": "string",
+          "default":  "degrees"
+        },
+        "energy-gValue": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

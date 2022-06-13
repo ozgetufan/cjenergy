@@ -1,0 +1,22 @@
+[
+	{
+		"gml_id" : "Building-4",
+		"citygml_function" : [ "winkelfunctie", "woonfunctie" ]
+	},
+	{
+		"gml_id" : "Building-5",
+		"citygml_function" : [ "woonfunctie" ]
+	},
+	{
+		"gml_id" : "Building-2",
+		"citygml_function" : [ "woonfunctie" ]
+	},
+	{
+		"gml_id" : "Building-1",
+		"citygml_function" : [ "woonfunctie" ]
+	},
+	{
+		"gml_id" : "Building-3",
+		"citygml_function" : [ "winkelfunctie" ]
+	}
+]

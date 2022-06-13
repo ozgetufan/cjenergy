@@ -1,0 +1,32 @@
+{
+  "areas": [
+    {
+      "pandid": "Building-4",
+      "sum_oppervlakte": 260,
+      "num_verblijfsobject": 1,
+      "avg_area": 260.0,
+      "no_resident": 3.88
+    },
+    {
+      "pandid": "Building-5",
+      "sum_oppervlakte": 140,
+      "num_verblijfsobject": 1,
+      "avg_area": 140.0,
+      "no_resident": 2.68
+    },
+    {
+      "pandid": "Building-2",
+      "sum_oppervlakte": 83,
+      "num_verblijfsobject": 1,
+      "avg_area": 83.0,
+      "no_resident": 1.97
+    },
+    {
+      "pandid": "Building-1",
+      "sum_oppervlakte": 82,
+      "num_verblijfsobject": 1,
+      "avg_area": 82.0,
+      "no_resident": 1.95
+    }
+  ]
+}
