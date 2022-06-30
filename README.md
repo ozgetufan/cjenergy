@@ -1,6 +1,6 @@
 # Development and Testing of the CityJSON Energy Extension for Space Heating Demand Calculation
 
-This repository contains the code developed as part of the MSc thesis of Özge Tufan in Geomatics at TU Delft. The thesis report can be accessed from the [TU Delft repository](https://repository.tudelft.nl/islandora/search/?collection=education). <!-- Change the link after uploading the thesis to repository -->
+This repository contains the code developed as part of the MSc thesis of Özge Tufan in Geomatics at TU Delft. The thesis report can be accessed from the [TU Delft repository](https://repository.tudelft.nl/islandora/object/uuid%3A0061d94c-46b6-4910-bb73-b6cdc9b85f84?collection=education). 
 
 ## Introduction
 
