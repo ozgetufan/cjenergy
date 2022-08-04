@@ -37,20 +37,23 @@ for each_cityobj in cityobjects.copy():
         else:
             cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "no"
     elif cityobjects[each_cityobj]["type"] == "BuildingPart":
-        if "woonfunctie" in cityobjects[each_cityobj]["attributes"]["+energy-function"]:
-            if "geometry" in cityobjects[each_cityobj]:
-                lod_2 = 0
-                for i in range(len(cityobjects[each_cityobj]["geometry"])):
-                    if cityobjects[each_cityobj]["geometry"][i]["lod"] == "2":
-                        lod_2 += 1
-                if lod_2 > 0:
-                    cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "yes"
+        if "has_missing_data" in cityobjects[each_cityobj]["attributes"]:
+            cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "no"
+        else:
+            if "woonfunctie" in cityobjects[each_cityobj]["attributes"]["+energy-function"]:
+                if "geometry" in cityobjects[each_cityobj]:
+                    lod_2 = 0
+                    for i in range(len(cityobjects[each_cityobj]["geometry"])):
+                        if cityobjects[each_cityobj]["geometry"][i]["lod"] == "2":
+                            lod_2 += 1
+                    if lod_2 > 0:
+                        cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "yes"
+                    else:
+                        cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "no"
                 else:
                     cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "no"
             else:
                 cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "no"
-        else:
-            cityobjects[each_cityobj]["attributes"]["bdg_in_calculation"] = "no"
 
 inp_file = open("./out_data/store_input_data_marked.json", "w")
 json.dump(data, inp_file)
